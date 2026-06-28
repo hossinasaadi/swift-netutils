@@ -1,9 +1,14 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
 let package = Package(
     name: "NetUtils",
+    platforms: [
+        .iOS(.v13),
+        .macCatalyst(.v13),
+        .macOS(.v10_15)
+    ],
     products: [
         .library(
             name: "NetUtils",
@@ -15,7 +20,9 @@ let package = Package(
         .target(
             name: "NetUtils",
             dependencies: [],
-            path: "NetUtils"),
+            path: "NetUtils",
+            exclude: ["Info.plist"]
+        ),
         .testTarget(
             name: "NetUtilsTests",
             dependencies: ["NetUtils"],

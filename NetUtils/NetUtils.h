@@ -1,6 +1,6 @@
 //  Copyright (c) 2015 Stefan van den Oord. All rights reserved.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for NetUtils.
 FOUNDATION_EXPORT double NetUtilsVersionNumber;
